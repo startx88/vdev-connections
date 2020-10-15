@@ -1,0 +1,125 @@
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$gray-f2: #f2f2f2 !default;
+// Colors
+$white: #fff !default;
+$black: #000 !default;
+$text-color: #374250 !default;
+
+$primary: #0da9ef !default;
+$parimary-light: rgba($primary, 5%) !default;
+$primary-dark: rgba($primary, 5%) !default;
+
+$info: #00bcd4;
+$violet: #c97aff;
+
+$wraning: #f1c40f;
+$warning-light: #fed700;
+$warning-dark: "";
+
+$danger: #bf2718;
+$danger-light: #e74c3c;
+$danger-dark: #ff0000;
+
+$success: #28a745;
+
+// Global Settings
+$base-size: 0.9rem;
+$base-family: "Roboto", sans-serif;
+$primary-family: "Raleway", sans-serif;
+$secondary-family: "Caveat", cursive;
+$line-height: 1.4;
+$letter-space: 0.04rem;
+
+// fonts
+$font-light: 300;
+$regular: 400;
+$semi-500: 500;
+$semi-600: 600;
+$bold: 700;
+
+// typography
+$font-light: 300;
+$small: $base-size - 4; // 12px
+$medium: $base-size - 2; // 14px
+$larget: $base-size + 2; //18px
+
+// Margin
+$m5: 5px;
+$m10: 10px;
+$m15: 15px;
+$m20: 20px;
+$m25: 25px;
+
+// Header
+$z-index: 1000;
+$w100: 100%;
+$brandWidth: 240px;
+
+// headings
+$h1: 1.75rem; // 28px
+$h2: 1.5rem; // 24px
+$h3: 1.25rem; // 22px
+$h4: 1.125rem; // 18px
+$h5: 1rem; // 16px
+$h6: $base-size;
+
+// border
+$input-border-color: rgba($text-color, 0.5);
+$input-border-color-focus: $white;
+
+// auth
+$placeholder-color: rgba($text-color, 0.5);
+$placeholder-color-focus: $white;
+
+// social color
+$google: #d14c2d !default;
+$google-hover: #b7381b !default;
+$fb: #516fa3 !default;
+$fb-hover: #38588e !default;
+$twitter: #4eb7ec !default;
+$twitter-hover: #38abe4 !default;
+$github: #434343 !default;
+$github-hover: #252525 !default;
+
+// header
+$admin-header-bg: linear-gradient(45deg, #49cdd0, #00bcd4);
+$header-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+$header-height: 55px;
+$width: 100%;
+$header-zindex: 1000;
+$brand-img-size: 30px;
+$brand-img-mr: 10px;
+
+// link
+$link-color: $text-color;
+$link-color-hover: $info;
+$circle: 50%;
+
+// sidebar
+
+$sidebar-width: 280px;
+$sidebar-bg: $white;
+$sidebar-before-bg: $info;
+$sidebar-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+$sidebar-zindex: 1;
+$sidebar-devider-color: $gray-300;
+$sidebar-divider-style: dashed;
+$sidebar-overflow: auto;
+$sidebar-menu-padding: 20px;
+$sidbear-link-color: $text-color;
+$sidebar-link-color-hover: $primary;
+$sidebar-link-color-active: $info;
+
+// user
+$avatar-sm: 40px;
+$avatar-md: 55px;
+$avatar-lg: 100px;
+$avatar-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);

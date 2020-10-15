@@ -1,0 +1,29 @@
+// transition
+@mixin transition($property: all, $duration: 300ms, $delay: null, $transition-timing-function: linear) {
+  -moz-transition: #{$property} #{$duration} #{$transition-timing-function} #{$delay};
+  -o-transition: #{$property} #{$duration} #{$transition-timing-function} #{$delay};
+  -webkit-transition: al#{$property} #{$duration} #{$transition-timing-function} #{$delay};
+  transition: #{$property} #{$duration} #{$transition-timing-function} #{$delay};
+}
+
+// box-shadow
+@mixin shadow($h: 1, $v: 0, $blur: 20, $color: $black, $opacity: 0.5) {
+  box-shadow: #{$h}px #{$v}px #{$blur}px rgba($black, $opacity);
+}
+
+// Placeholders
+@mixin placeholder($color: $white, $opacity: 1) {
+  &::placeholder {
+    color: rgba($color, $opacity);
+    opacity: 1; /* Firefox */
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba($color, $opacity);
+  }
+
+  &::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba($color, $opacity);
+  }
+}

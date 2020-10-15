@@ -1,0 +1,67 @@
+.auth {
+  background-color: $gray-100;
+  color: $white;
+  font-size: $base-size - 0.1rem;
+
+  &-btn-link {
+    color: $white;
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+
+  .forgot {
+    display: block;
+    color: $white;
+    margin-bottom: 20px;
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+
+  &-title {
+    text-align: center;
+    margin-bottom: 30px;
+    h1 {
+      margin-bottom: 10px;
+      font-weight: $semi-600;
+    }
+    p {
+    }
+
+    a {
+      color: $info;
+    }
+  }
+
+  &-form {
+    min-width: 350px;
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .sep {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    color: $white;
+    &:before,
+    &:after {
+      content: "";
+      margin: auto;
+      top: 27px;
+      width: 25%;
+      height: 1px;
+      z-index: -1;
+      background-color: $input-border-color;
+      position: absolute;
+    }
+    &:before {
+      left: 20%;
+    }
+    &:after {
+      right: 20%;
+    }
+  }
+}

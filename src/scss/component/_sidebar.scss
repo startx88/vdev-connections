@@ -1,0 +1,119 @@
+.sidebar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 15px 25px;
+  position: relative;
+  z-index: $sidebar-zindex;
+  background: $sidebar-bg;
+  box-shadow: $sidebar-shadow;
+  overflow-y: $sidebar-overflow;
+
+  // divider
+  hr {
+    margin: 1.2rem 0;
+    width: 100%;
+    border-top: 1px $sidebar-divider-style $sidebar-devider-color;
+  }
+
+  &-admin {
+    width: $sidebar-width;
+    position: fixed;
+    height: calc(100vh - #{$header-height});
+    top: $header-height;
+    padding-bottom: 100px;
+  }
+
+  &-user {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    &:before {
+      content: "";
+      z-index: -1;
+      background-color: $sidebar-before-bg;
+      position: absolute;
+      min-height: 100px;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  // menu
+  .menu {
+    list-style: none;
+    padding: 0;
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        font-weight: $regular;
+        flex-wrap: wrap;
+        svg {
+          margin-right: 10px;
+        }
+        &.router-link-exact-active {
+          color: $info;
+        }
+      }
+    }
+  }
+
+  // user info
+
+  .detail {
+    font-family: $primary-family;
+    font-weight: $semi-600;
+    margin: 15px 0 25px;
+    text-align: center;
+    h6 {
+      font-weight: inherit;
+      small {
+        display: block;
+        color: $danger;
+        font-weight: bold;
+        font-size: 100%;
+      }
+      margin-bottom: 10px;
+    }
+    span {
+      font-weight: 400;
+    }
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  &-social {
+    max-width: 120px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      color: $gray-600;
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+  }
+
+  &-bottom {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    p {
+      font-size: $base-size - 0.1rem;
+      small {
+        display: block;
+      }
+    }
+  }
+}

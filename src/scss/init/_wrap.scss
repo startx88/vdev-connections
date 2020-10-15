@@ -1,0 +1,10 @@
+.admin-content-wrap {
+  display: flex;
+  margin-left: $sidebar-width;
+  margin-top: $header-height;
+  background-color: $gray-100;
+  .admin-content {
+    flex: 1;
+    padding: 20px;
+  }
+}

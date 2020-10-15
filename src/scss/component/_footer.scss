@@ -1,0 +1,10 @@
+footer {
+  text-align: center;
+  font-size: $base-size - 0.1rem;
+  font-weight: 400;
+  color: $gray-500;
+  padding-top: 15px;
+  a {
+    color: inherit;
+  }
+}

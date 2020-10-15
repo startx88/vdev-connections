@@ -1,0 +1,16 @@
+%flex-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+%vcenter {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%shadow {
+  @include shadow($blur: 10, $opacity: 0.08);
+}

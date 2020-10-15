@@ -1,0 +1,60 @@
+.btn {
+  font-family: $primary-family;
+  font-weight: $semi-600;
+  letter-spacing: 0.03rem;
+  &-circle {
+    border-radius: 50px;
+  }
+  &-xs {
+    min-width: 100px;
+  }
+  &-sm {
+    padding: 8px 12px;
+    min-width: 120px;
+  }
+  &-md {
+    min-width: 150px;
+  }
+  &-primary {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:disabled {
+      background-color: lighten($primary, 10%);
+      border-color: lighten($primary, 10%);
+    }
+    &:hover {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+    }
+  }
+
+  &-social {
+    @extend .btn-circle;
+    color: $white;
+    margin: 0 10px;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &-g {
+    background-color: $google;
+    border-color: $google;
+    @extend .btn-social;
+    &:hover {
+      background-color: $google-hover;
+      border-color: $google-hover;
+    }
+  }
+
+  &-fb {
+    background-color: $fb;
+    border-color: $fb;
+    @extend .btn-social;
+    &:hover {
+      background-color: $fb-hover;
+      border-color: $fb-hover;
+    }
+  }
+}

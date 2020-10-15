@@ -1,0 +1,80 @@
+.navbar {
+  border: none;
+  border-radius: 0;
+  z-index: $header-zindex;
+  width: $width;
+  padding: 0;
+  box-shadow: $header-shadow;
+
+  &-brand {
+    font-family: $primary-family;
+    font-weight: $bold;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    img {
+      max-width: $brand-img-size;
+      margin-right: $brand-img-mr;
+    }
+    &:hover {
+      color: $text-color;
+    }
+  }
+
+  &-admin,
+  &-user {
+    .navbar-brand {
+      height: $header-height;
+      background-color: $white;
+      text-align: center;
+      padding: 0;
+    }
+  }
+
+  // navigation
+  &-nav {
+    margin-right: 15px;
+    li {
+      display: flex;
+      align-items: center;
+      a {
+        color: $white;
+        flex: 1;
+        &:hover {
+          color: darken($info, 20%);
+        }
+      }
+    }
+  }
+
+  &-user {
+    height: $header-height;
+    background-image: $admin-header-bg;
+    .navbar-brand {
+      width: $sidebar-width - 25px;
+    }
+  }
+
+  &-admin {
+    background: $admin-header-bg;
+    height: $header-height;
+    position: fixed;
+    .navbar-brand {
+      width: $sidebar-width;
+    }
+    .nav-link {
+      text-transform: uppercase;
+      color: $white;
+      font-weight: bold;
+      letter-spacing: 0.5pt;
+      &.active {
+        color: darken($info, 15%);
+      }
+      &:hover {
+        color: darken($info, 15%);
+      }
+    }
+  }
+}

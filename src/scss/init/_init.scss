@@ -1,0 +1,39 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: inherit;
+  font-size: $base-size;
+  color: $text-color;
+  line-height: $line-height;
+  display: flex;
+  flex-direction: column;
+  font-family: $base-family;
+  font-weight: $font-light;
+  line-height: $line-height;
+  letter-spacing: $letter-space;
+}
+
+a {
+  outline: none;
+  color: $link-color;
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    color: $link-color-hover;
+    text-decoration: none;
+  }
+}
+
+#app,
+#root {
+  @extend %flex-column;
+  min-height: inherit;
+  > main,
+  > .container,
+  > .container-fluid {
+    @extend %flex-column;
+  }
+}

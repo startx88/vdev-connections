@@ -1,0 +1,33 @@
+.avatar {
+  overflow: hidden;
+  box-shadow: $avatar-shadow;
+  border-radius: 50%;
+  vertical-align: bottom;
+  &.mr {
+    margin-right: 10px;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &-sidebar {
+    border: 5px solid $white;
+    margin: auto;
+  }
+
+  &-nav {
+  }
+
+  &.sm {
+    width: $avatar-sm;
+    height: $avatar-sm;
+  }
+  &.md {
+    width: $avatar-md;
+    height: $avatar-md;
+  }
+  &.lg {
+    width: $avatar-lg;
+    height: $avatar-lg;
+  }
+}

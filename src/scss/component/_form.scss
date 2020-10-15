@@ -1,0 +1,27 @@
+.form-control {
+  min-height: 40px;
+  font-size: $base-size;
+  background-color: transparent;
+  border-color: $input-border-color;
+  color: $white;
+  @include placeholder($placeholder-color);
+  &:focus,
+  &:hover,
+  &:active {
+    box-shadow: none;
+    border-color: $input-border-color-focus;
+    background-color: transparent;
+    @include placeholder($placeholder-color-focus);
+    color: $white;
+  }
+}
+.error {
+  .errors {
+    span {
+      color: $danger-dark;
+      display: block;
+      margin-top: 5px;
+      font-size: $base-size - 0.2rem;
+    }
+  }
+}
